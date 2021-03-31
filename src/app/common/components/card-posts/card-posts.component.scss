@@ -1,0 +1,37 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	width: 25em;
+	gap: 1em;
+	.media {
+		text-align: center;
+		img {
+			width: 10em;
+		}
+	}
+
+	.titles {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+		align-items: center;
+		text-align: center;
+		.title {
+			font-size: 18px;
+			font-weight: bold;
+		}
+	}
+
+	.comments {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		gap: 1em;
+		color: #0fbfe5;
+		font-weight: bold;
+		cursor: pointer;
+		img {
+			width: 2em;
+		}
+	}
+}

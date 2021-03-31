@@ -1,0 +1,3 @@
+<div *ngIf="listUser.length > 0" class="container">
+	<app-card-user *ngFor="let item of listUser" [user]="item"></app-card-user>
+</div>

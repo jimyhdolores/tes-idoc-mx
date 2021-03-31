@@ -1,0 +1,3 @@
+<div *ngIf="listAlbums.length > 0" class="container">
+	<app-card-albums *ngFor="let item of listAlbums" [album]="item"></app-card-albums>
+</div>

@@ -1,0 +1,16 @@
+<app-card *ngIf="post !== undefined">
+	<div class="container">
+		<div class="media">
+			<img src="assets/svg/social-media.svg" alt="" />
+		</div>
+
+		<div class="titles">
+			<label class="title">{{ post.title }}</label>
+			<label for="">{{ post.body }}</label>
+		</div>
+
+		<div class="comments" (click)="showComments()">
+			Comments <img src="assets/svg/comments.svg" alt="" />
+		</div>
+	</div>
+</app-card>

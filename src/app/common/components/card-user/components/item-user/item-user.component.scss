@@ -1,0 +1,8 @@
+.container {
+	display: flex;
+	&__titles {
+		display: flex;
+		flex-direction: column;
+		padding-left: 5px;
+	}
+}

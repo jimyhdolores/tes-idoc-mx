@@ -1,0 +1,9 @@
+<app-card *ngIf="user !== undefined">
+	<div class="user">
+		<span class="material-icons user"> account_circle </span>
+	</div>
+
+	<app-item-user title="Name" [value]="user.name" iconName="account_box"></app-item-user>
+	<app-item-user title="User Name" [value]="user.username" iconName="account_box"></app-item-user>
+	<app-item-user title="Phone" [value]="user.phone" iconName="phone_iphone"></app-item-user>
+</app-card>

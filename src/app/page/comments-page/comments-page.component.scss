@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	&__return {
+		color: red;
+		font-weight: bold;
+		font-size: 18px;
+		cursor: pointer;
+	}
+
+	&__post {
+		font-size: 18px;
+		font-weight: bold;
+		text-align: center;
+		text-transform: uppercase;
+		color: #ff980e;
+	}
+
+	&__items {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2em;
+	}
+}

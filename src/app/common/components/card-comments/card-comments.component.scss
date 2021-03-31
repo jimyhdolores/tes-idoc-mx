@@ -1,0 +1,23 @@
+.container {
+	display: flex;
+	width: 32em;
+	.user {
+		font-size: 28px;
+		text-align: center;
+		color: #3e5959;
+	}
+	.titles {
+		display: flex;
+		flex-direction: column;
+		gap: 1em;
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			.name {
+				font-size: 18px;
+				font-weight: bold;
+			}
+		}
+	}
+}

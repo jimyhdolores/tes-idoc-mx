@@ -1,0 +1,9 @@
+<div
+	class="card"
+	[ngClass]="{
+		'flex-direction-column': direction === 'column',
+		'flex-direction-row': direction === 'row'
+	}"
+>
+	<ng-content></ng-content>
+</div>

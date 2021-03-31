@@ -1,0 +1,14 @@
+<app-card *ngIf="comment !== undefined" direction="row">
+	<div class="container">
+		<div class="user">
+			<span class="material-icons user"> account_circle </span>
+		</div>
+		<div class="titles">
+			<div class="info">
+				<label class="name">{{ comment.name }}</label>
+				<label class="email">{{ comment.email }}</label>
+			</div>
+			<label> {{ comment.body }} </label>
+		</div>
+	</div>
+</app-card>

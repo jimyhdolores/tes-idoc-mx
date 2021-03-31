@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+	<button
+		mat-icon-button
+		class="example-icon"
+		aria-label="Example icon-button with menu icon"
+		(click)="drawer.toggle()"
+	>
+		<mat-icon>menu</mat-icon>
+	</button>
+	<span>Test Idoc MX</span>
+	<span class="example-spacer"></span>
+</mat-toolbar>
+<mat-drawer-container class="drawer" autosize>
+	<mat-drawer #drawer class="example-sidenav" mode="side" opened>
+		<app-menu></app-menu>
+	</mat-drawer>
+
+	<div class="sidenav-content">
+		<div class="sidenav-content__filter">
+			<h1>{{ title }}</h1>
+			<app-search-component *ngIf="showInput" [textHint]="textHint"></app-search-component>
+		</div>
+
+		<router-outlet></router-outlet>
+	</div>
+</mat-drawer-container>

@@ -1,0 +1,10 @@
+<div class="container" [@inOutAnimation]>
+	<div class="container__return" (click)="return()">
+		<span class="material-icons user"> reply </span>
+		<span>Return Posts</span>
+	</div>
+	<span class="container__post">Post: {{ titlePost }} </span>
+	<div *ngIf="listComment.length > 0" class="container__items">
+		<app-card-comments *ngFor="let item of listComment" [comment]="item"></app-card-comments>
+	</div>
+</div>

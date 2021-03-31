@@ -1,0 +1,3 @@
+<div *ngIf="listPosts.length > 0" class="container">
+	<app-card-posts *ngFor="let item of listPosts" [post]="item"></app-card-posts>
+</div>
